@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharvari Wakhare</title>
+    <link rel="stylesheet" href="stylefinal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <div class="name" style="font-size: xxx-large">Portfolio.</div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav id="myname">
+                <div class="max-width">
+                    <div class="homecontent">
+                        <div class="text1" style="font-size: xx-large; padding-top: 150px">Hello, my name is</div>
+                        <div class="text2" style="font-size: xxx-large;">Sharvari Wakhare,</div>
+                        <div class="text3" style="font-size: xx-large;">I'm a <span class="text33" style="color: #886F68; font-size: xxx-large"></span></div>
+                        <div class="resume">
+                            <a href="resume2.pdf" download class="cv">Download Resume</a>
+                        </div>
+                        <script>
+                            const text = document.querySelector(".text33");
+                            const textLoad = () =>{
+                                setTimeout(() =>{
+                                    text.textContent = "Web Developer"
+                                },0);
+                                setTimeout(() =>{
+                                    text.textContent = "Tech Enthusiast"
+                                },4000);
+                                setTimeout(() =>{
+                                    text.textContent = "Terpsichorean"
+                                },8000);
+                            }
+
+                            textLoad();
+                            setInterval(textLoad,12000);
+                        </script>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="me.png" alt="" id="image">
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="row">
+            <div class="about-col">
+                <h1 class="subtitle">About Me</h1>
+                <p style="font-size: 25px; padding-top: 30px;">I am a passionate tech enthusiast, currently pursuing my ungrad degree at Shri Ramdeobaba College of Engineering and Management in the field of Computer Science, specialization in Artificial Intelligence and Machine Learning.
+                    I try to express via creation of captivating web experiences through coding.
+                </p>
+                <div class="tab-titles" style="padding-top: 80px; color: #3D2C2E;">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('extracurricular')">Extracurricular</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span style="font-size: 20px;">Basics of HTML and CSS</span></li>
+                        <li><span style="font-size: 20px;">Basics of C and Python</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education" style="font-size: 20px;">
+                    <ul>
+                        <li>Shri Ramdeobaba College of Engineering and Management, Nagpur - B.Tech<br><span class="edu">December 2021 - Present</span></li>
+                        <li>St. Paul Junior College, Nagpur - Higher Secondary Education<br><span class="edu">April 2020 - August 2021, Secured 96.6%</span></li>
+                        <li>Narayana Vidyalayam, Nagpur - Secondary School Education<br><span class="edu">April 2018 - March 2019, Secured 96.4%</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="extracurricular" style="font-size: 20px;">
+                    <ul>
+                        <li><span>Member of the Dance Club, RCOEM</span></li>
+                        <li><span>Content team member of the Association of Computing Machinery(ACM), RCOEM chapter</span></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <nav id="imagework">
+                <div class="work">
+                    <a href="https://github.com/Shar-03/Mathswebsite"><img src="mathematica.png" alt=""> </a>
+                </div>
+                <div class="work">
+                    <a href="https://github.com/Shar-03/Samplecheckout"><img src="samplecheck.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle">Contact Me</h1>
+                <br>
+                <div class="socials">
+                    <a href= "mailto:sharvariwakhare03@gmail.com"><img src="Gmail.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/sharvari-wakhare-665129235/"><img src="linkedin.svg" alt=""></a>
+                    <!-- <a href=" https://twitter.com/agarwal262003?t=cLtcI1abOO09PxNy00KbEw&s=08"><img src="twitter.svg" alt=""></a> -->
+                    <a href="https://www.instagram.com/sharvari_wakhare/"><img src="instagram.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6"></textarea>
+                    <button type="submit" class="button" style="background: #3D2C2E;
+                    color: #F5EDF0;
+                    padding: 15px 20px; border-radius: 10px;">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; made by Sharvari Wakhare </p>
+    </div>
+
+    <script>
+        var typed = new typed(".typing", {
+            strings: ["Developer", "Tech Enthusiast", "Terpsichorean"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby273bdGmJcoti8w_TO6NhDKlwF2Pl4zp6cbWxYKOsjTBN_rZS3iaNXpC-89tgHaVvBCg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert("Form Successfully Submitted!!")
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

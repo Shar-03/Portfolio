@@ -1,0 +1,253 @@
+/*fonts*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #F5EDF0;
+    color: #3D2C2E;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 6%;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#3D2C2E;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #D1CCDC;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.home-content{
+    padding-top: 100px;
+}
+.home-content .text1{
+    font-size: 27px;
+}
+.home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home-content .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home-content .text3 span{
+    position: relative;
+    color:#424C55;
+    font-weight: 500;
+}
+.home-content .text3 span:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F9F7F3;
+    border-left: 2px solid #0FA3B1;
+    animation: animate 4s steps(12) infinite;
+    -webkit-animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%
+    }
+}
+.max-width{
+    padding-left: 80px;
+}
+.image{
+    padding-top: 80px;
+    padding-right: 150px;;
+}
+
+#image{
+    width: 500px;
+    height: 450px;
+    display: inline-block;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.subtitle{
+    font-size: xxx-large;
+    font-weight: 600;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    color: gray;
+}
+.edu{
+    color: #424C55;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #886F68;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    margin: 10px 0;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+#portfolio{
+    padding: 60px 0;
+}
+/*  */
+.work img{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.work img:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+}
+.imagework{
+    display: flexbox;
+}
+
+#contact{
+    padding-left: 80px;
+}
+.socials{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+.contactleft{
+    flex-basis: 35%;
+}
+.contactleft p{
+    margin-top: 30px;
+}
+.contactright{
+    flex-basis: 65%;
+}
+.resume{
+    padding-left: 80px;
+}
+.cv{
+    display: block;
+    margin:50px auto;
+    width: fit-content;
+    background-color: #3D2C2E;
+    border: 1px solid #424C55;
+    padding: 14px 50px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    
+}
+.cv:hover{
+    background: #424C55;
+}
+.contactright form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #D1CCDC;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #424C55;
+}
+
+form.button{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(237, 237, 237);
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
